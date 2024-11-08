@@ -24,7 +24,9 @@ The universal shift register is another general-purpose digital circuitry that p
 A universal shift register operates in any of three modes: according to the control signals. If the “Shift Left” control signal is active, there is a shift in data one position to the left, while the leftmost bit is lost and the rightmost bit is replaced from the serial input. In “Shift Right,” the data moves right with the loss of the rightmost bit and loading of the leftmost from the serial input. “Parallel Load” allows the simultaneous loading of data from all input lines. For this, the register retains its current data if none of the control signals have been activated. Internally, their obvious external interface is implemented by using multiplexers and flip-flops: the bits are held by a flip-flop, while a multiplexer acts for the input source at each operation.
 ## n-Bit Universal Shift Register
 A n-bit universal shift register consists of n flip-flops and n 4×1 multiplexers. All the n multiplexers share the same select lines(S1 and S0)to select the mode in which the shift register operates. The select inputs select the suitable input for the flip-flops.
+
 ![image](https://github.com/user-attachments/assets/281abf2e-3d2f-43db-becd-23a6c1c3b702)
+
 > Basic connections
 * The first input (zeroth pin of multiplexer) is connected to the output pin of the corresponding flip-flop.
 * The second input (first pin of multiplexer) is connected to the output of the very-previous flip flop which facilitates the right shift.
