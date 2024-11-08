@@ -33,7 +33,9 @@ A n-bit universal shift register consists of n flip-flops and n 4×1 multiplexer
 * The third input (second pin of multiplexer) is connected to the output of the very-next flip-flop which facilitates the left shift.
 * The fourth input (third pin of multiplexer) is connected to the individual bits of the input data which facilitates parallel loading.
 The working of the Universal shift register depends on the inputs given to the select lines. The register operations performed for the various inputs of select lines are as follows
+
 ![image](https://github.com/user-attachments/assets/d2bf2591-c937-48fd-87c1-114ae8c95bfd)
+
 ## Advantages of Universal Shift Register
 * Multifunctionality: left and right shifts, parallel load, and static hold can all be performed.
 * Flexibility: can be used in many different digital systems.
